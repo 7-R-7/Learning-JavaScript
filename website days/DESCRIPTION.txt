@@ -26,3 +26,5 @@ DESCRIPTION OF EVERY DAY PROGRESS AND WHAT I LEARNED .
 * PART 4 : constants
 
 * PART 5 : counter program using javascript + html + css
+
+* PART 6 : Math object
