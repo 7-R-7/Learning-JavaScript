@@ -1,0 +1,22 @@
+DESCRIPTION :
+--------------
+
+DESCRIPTION OF EVERY DAY PROGRESS AND WHAT I LEARNED . 
+
+-----------
+01/ DAY 01:
+-----------
+
+
+* PART 1 : console.log() + document.getElementById("myH1").textContent + window.alert()
+
+* PART 2 : variables + booleans
+
+
+-----------
+02/ DAY 02:
+-----------
+
+* PART 1 : arithmetic operators
+
+* PART 2 : user input (textbox or window.input)
