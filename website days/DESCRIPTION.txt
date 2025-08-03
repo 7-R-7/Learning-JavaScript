@@ -24,3 +24,5 @@ DESCRIPTION OF EVERY DAY PROGRESS AND WHAT I LEARNED .
 * PART 3 : type conversion
 
 * PART 4 : constants
+
+* PART 5 : counter program using javascript + html + css
