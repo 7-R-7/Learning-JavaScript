@@ -8,7 +8,7 @@ DESCRIPTION OF EVERY DAY PROGRESS AND WHAT I LEARNED .
 -----------
 
 
-* PART 1 : console.log() + document.getElementById("myH1").textContent + window.alert()
+* PART 1 : console.log() + document.getElementById().textContent + window.alert()
 
 * PART 2 : variables + booleans
 
@@ -22,3 +22,5 @@ DESCRIPTION OF EVERY DAY PROGRESS AND WHAT I LEARNED .
 * PART 2 : user input (textbox or window.input)
 
 * PART 3 : type conversion
+
+* PART 4 : constants
