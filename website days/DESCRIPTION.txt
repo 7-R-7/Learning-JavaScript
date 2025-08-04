@@ -28,3 +28,10 @@ DESCRIPTION OF EVERY DAY PROGRESS AND WHAT I LEARNED .
 * PART 5 : counter program using javascript + html + css
 
 * PART 6 : Math object
+
+
+-----------
+03/ DAY 03:
+-----------
+
+* PART 1 : Random number generator
