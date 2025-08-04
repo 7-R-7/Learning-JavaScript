@@ -35,3 +35,5 @@ DESCRIPTION OF EVERY DAY PROGRESS AND WHAT I LEARNED .
 -----------
 
 * PART 1 : Random number generator
+
+* PART 2 : If statements
