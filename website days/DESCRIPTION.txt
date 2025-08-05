@@ -48,3 +48,5 @@ DESCRIPTION OF EVERY DAY PROGRESS AND WHAT I LEARNED .
 * PART 2 : ternary operator
 
 * PART 3 : switches
+
+* PART 4 : string methods
