@@ -1,0 +1,98 @@
+JS :
+----
+
+// let day = 11;
+
+// switch(day){
+//     case 1:
+//         console.log("It is Monday");
+//         break;
+//     case 2:
+//         console.log("It is Tuesday");
+//         break;
+//     case 3:
+//         console.log("It is Wednesday");
+//         break;
+//     case 4:
+//         console.log("It is Thursday");
+//         break;
+//     case 5:
+//         console.log("It is Friday");
+//         break;
+//     case 6:
+//         console.log("It is Saturday");
+//         break;
+//     case 7:
+//         console.log("It is Sunday");
+//         break;
+//     default:
+//         console.log(`${day} is not a day`);
+// }
+
+
+let testScore = 42;
+let letterGrade;
+
+switch(true){
+    case testScore >= 90:
+        letterGrade = "A";
+        break;
+    case testScore >= 80:
+        letterGrade = "B";
+        break;
+    case testScore >= 70:
+        letterGrade = "C";
+        break;
+    case testScore >= 60:
+        letterGrade = "D";
+        break;
+    default:
+        letterGrade = "F";
+}
+
+console.log(letterGrade);
+
+
+------
+HTML :
+------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="checkbox" id="myCheckbox" name="card">
+    <labe for="myCheckbox">subscribe</labe><br><br>
+    <input type="radio" id="visaBtn" name="card">
+    <label for="visaBtn">Visa</label>
+    <input type="radio" id="mastercardBtn" name="card">
+    <label for="mastercardBtn">MasterCard</label>
+    <input type="radio" id="paypalBtn" name="card">
+    <label for="paypalBtn">Paypal</label><br><br>
+
+    <button type="submit" id="mySubmit">submit</button>
+
+    <p id="subresult"></p>
+    <p id="paymentresult"></p>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+-----
+CSS :
+-----
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+}
+
+#mySubmit {
+    font-size: 1em;
+}
