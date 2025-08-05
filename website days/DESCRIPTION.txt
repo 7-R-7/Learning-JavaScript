@@ -60,3 +60,5 @@ DESCRIPTION OF EVERY DAY PROGRESS AND WHAT I LEARNED .
 * PART 8 : strict equality
 
 * PART 9 : while loops
+
+* PART 10 : for loop
