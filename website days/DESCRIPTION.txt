@@ -37,3 +37,10 @@ DESCRIPTION OF EVERY DAY PROGRESS AND WHAT I LEARNED .
 * PART 1 : Random number generator
 
 * PART 2 : If statements
+
+
+-----------
+04/ DAY 04:
+-----------
+
+* PART 1 : checked property
