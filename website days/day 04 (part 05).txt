@@ -1,0 +1,85 @@
+JS :
+----
+
+/* string slicing = creating a substring
+                    from a portion of another string
+
+                    string.slice(start, end)
+*/
+
+const fullname = "CSeven 7-R-7";
+
+// let firstname = fullname.slice(0,2);
+// let lastname = fullname.slice(1,6);
+
+// let firstChar = fullname.slice(0,1);
+// let lastChar = fullname.slice(-1);
+
+// console.log(firstname);
+// console.log(lastname);
+
+// console.log(firstChar);
+// console.log(lastChar);
+
+
+
+// let firstname = fullname.slice(0, fullname.indexOf(" "));
+// let lasttname = fullname.slice(fullname.indexOf(" ")+1);
+
+// console.log(firstname);
+// console.log(lasttname);
+
+
+
+const email = "cseven@gmail.com";
+
+let username = email.slice(0,email.indexOf("@"));
+let extension = email.slice(email.indexOf("@")+1); // +! used to remove the "@"
+
+console.log(username);
+console.log(extension);
+
+
+------
+HTML :
+------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="checkbox" id="myCheckbox" name="card">
+    <labe for="myCheckbox">subscribe</labe><br><br>
+    <input type="radio" id="visaBtn" name="card">
+    <label for="visaBtn">Visa</label>
+    <input type="radio" id="mastercardBtn" name="card">
+    <label for="mastercardBtn">MasterCard</label>
+    <input type="radio" id="paypalBtn" name="card">
+    <label for="paypalBtn">Paypal</label><br><br>
+
+    <button type="submit" id="mySubmit">submit</button>
+
+    <p id="subresult"></p>
+    <p id="paymentresult"></p>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+-----
+CSS :
+-----
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+}
+
+#mySubmit {
+    font-size: 1em;
+}

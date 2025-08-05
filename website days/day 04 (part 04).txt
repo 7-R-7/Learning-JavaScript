@@ -1,0 +1,106 @@
+JS :
+----
+
+let username = "CSeven";
+
+// console.log( username.charAt(1));
+// console.log( username.charAt(the index));
+
+// console.log(username.indexOf("v"));
+// console.log(username.indexOf("the alphabet"));
+
+// console.log(username.lastIndexOf("n"));
+
+// console.log(username.length);
+
+//username = username.trim(); deletes the spaces that are in the right side and left side
+// console.log(username);
+
+// username = username.toUpperCase();
+// username = username.toLowerCase();
+// username = username.repeat(3);
+// console.log(username);
+
+// let result = username.startsWith(" ");
+// console.log(result);
+
+// if (result){
+//     console.log("Your username cane't begin with ' '");
+// }
+// else{
+//     console.log(username);
+// }
+
+// let result = username.endsWith(" ");
+
+// if(result){
+//     console.log("Your username can't end with ' '");
+// }
+// else{
+//     console.log(username);
+// }
+
+// let result = username.includes(" ");
+
+// if(result){
+//     console.log("Your username can't include ' '");
+// }
+// else{
+//     console.log(username);
+// }
+
+let phonenumber = "123-456-789";
+
+// phonenumber = phonenumber.replaceAll("-","~");
+// console.log(phonenumber);
+
+// phonenumber = phonenumber.padStart(20,"*");
+// console.log(phonenumber);
+
+phonenumber = phonenumber.padEnd(20,"*");
+console.log(phonenumber);
+
+
+------
+HTML :
+------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="checkbox" id="myCheckbox" name="card">
+    <labe for="myCheckbox">subscribe</labe><br><br>
+    <input type="radio" id="visaBtn" name="card">
+    <label for="visaBtn">Visa</label>
+    <input type="radio" id="mastercardBtn" name="card">
+    <label for="mastercardBtn">MasterCard</label>
+    <input type="radio" id="paypalBtn" name="card">
+    <label for="paypalBtn">Paypal</label><br><br>
+
+    <button type="submit" id="mySubmit">submit</button>
+
+    <p id="subresult"></p>
+    <p id="paymentresult"></p>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+-----
+CSS :
+-----
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+}
+
+#mySubmit {
+    font-size: 1em;
+}
