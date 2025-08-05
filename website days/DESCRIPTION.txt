@@ -50,3 +50,5 @@ DESCRIPTION OF EVERY DAY PROGRESS AND WHAT I LEARNED .
 * PART 3 : switches
 
 * PART 4 : string methods
+
+* PART 5 : string slicing
