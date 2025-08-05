@@ -54,3 +54,5 @@ DESCRIPTION OF EVERY DAY PROGRESS AND WHAT I LEARNED .
 * PART 5 : string slicing
 
 * PART 6 : method chaining
+
+* PART 7 : logical operators
