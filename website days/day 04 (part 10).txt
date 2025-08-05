@@ -1,0 +1,80 @@
+JS :
+----
+
+// for(let i = 0; i <= 10; i+=2){
+//     console.log(`value of i = ${i}`);
+// }
+
+// for(let j = 10; j >= 0; j-=2){
+//     console.log(`value of j = ${j}`);
+// }
+
+// console.log("FINISH");
+
+
+
+// for(i = 1; i <=20; i++){
+    
+//     if(i == 13){
+//         continue;
+//     }
+//     else{
+//     console.log(i);
+//     }
+// }
+
+
+for(i = 1; i <=20; i++){
+    
+    if(i == 13){
+        break;
+    }
+    else{
+    console.log(i);
+    }
+}
+
+
+------
+HTML :
+------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="checkbox" id="myCheckbox" name="card">
+    <labe for="myCheckbox">subscribe</labe><br><br>
+    <input type="radio" id="visaBtn" name="card">
+    <label for="visaBtn">Visa</label>
+    <input type="radio" id="mastercardBtn" name="card">
+    <label for="mastercardBtn">MasterCard</label>
+    <input type="radio" id="paypalBtn" name="card">
+    <label for="paypalBtn">Paypal</label><br><br>
+
+    <button type="submit" id="mySubmit">submit</button>
+
+    <p id="subresult"></p>
+    <p id="paymentresult"></p>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+-----
+CSS :
+-----
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+}
+
+#mySubmit {
+    font-size: 1em;
+}
