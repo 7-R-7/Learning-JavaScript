@@ -1,0 +1,136 @@
+JS :
+----
+
+// rest parameters =   (...rest) allow a function work with a variable
+//                     number of arguments by bundling them into an Array
+
+//                     spread = expand an array into seperate elements
+//                     rest = bundles seperate elements into an array
+
+
+// function openFridge(...foods){
+//     console.log(foods);
+// }
+
+// function getFood(...foods){
+//     return foods;
+// }
+
+// const food1 = "pizza";
+// const food2 = "sandwich";
+// const food3 = "burger";
+// const food4 = "sushi";
+
+// openFridge(food1, food2, food3, food4);
+
+// const foods = getFood(food1, food2, food3, food4);
+// console.log(foods);
+
+
+// function sum(...numbers){
+//     let result = 0;
+//     for (let number of numbers){
+//         result += number;
+//     }
+//     return result;
+// }
+// const total = sum(1, 2, 3, 4, 5);
+// console.log(`Your total is $${total}`);
+
+
+// function getAverage(...numbers){
+//     let result = 0;
+//     for (let number of numbers){
+//         result += number;
+//     }
+//     return result / numbers.length;
+// }
+// const total = getAverage(80, 99, 60, 73);
+// console.log(total);
+
+function combineStrings(...strings){
+    return strings.join(" ");
+}
+const fullName = combineStrings("Mr.", "Spongebob", "Squarepants", "III");
+console.log(fullName);
+
+
+
+------
+HTML :
+------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+-----
+CSS :
+-----
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+h1{
+    color: rgb(244, 113, 101);
+}
+
+form{
+    background-color: rgb(247, 243, 179);
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(244, 201, 115);
+}
+
+#textbox{
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid rgb(46, 2, 205);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+label{
+    font-size : 1.5em;
+    font-weight: bold;   
+}
+
+button{
+    margin-top: 15px;
+    background-color: rgb(251, 74, 83);
+    color: black;
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(248, 26, 37);
+}
+
+#result{
+    font-size: 1.75em;
+    font-weight: bold;
+}
