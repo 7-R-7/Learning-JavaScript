@@ -1,0 +1,116 @@
+JS :
+----
+
+// function =  A section of reusable code .
+//             Declare code once, use it whenever you .
+//             Call the function to execute that code .
+
+
+
+// function happyBirthday(){
+//     window.alert("Happy Birthday !");
+//     console.log("Happy Birthday !")
+// }
+// happyBirthday();
+
+
+
+// function happyBirthday(username, age){
+//     console.log(`Happy Birthday ${username}!`);
+//     console.log(`You are ${age} years old !`)
+// }
+// happyBirthday("CSeven", 99);
+
+
+
+function add(x, y){
+    let result = x + y;
+    return result;
+}
+let answer = add (2, 3);
+console.log(answer);
+
+//--------------
+
+function sub(x ,y){
+    return x -y;
+}
+console.log(sub(2, 3));
+
+//--------------
+
+function isEven(number){
+
+    // return number % 2 === 0  ? true : false;
+    if(number % 2 === 0){
+        return `${number} is Even`;
+    }
+    else{
+        return `${number} is Odd`;
+    }
+}
+
+console.log(isEven(9));
+
+//--------------
+
+function isValidEmail(email){
+    if (email.includes("@")){
+        return true;
+    }
+    else{
+        return false;
+    }
+
+    // return email.includes("@") ? true : false;
+}
+
+console.log(isValidEmail("Cseven@7-R-7.com"));
+console.log(isValidEmail("Cseven-7-R-7.com"));
+
+
+
+------
+HTML :
+------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="checkbox" id="myCheckbox" name="card">
+    <labe for="myCheckbox">subscribe</labe><br><br>
+    <input type="radio" id="visaBtn" name="card">
+    <label for="visaBtn">Visa</label>
+    <input type="radio" id="mastercardBtn" name="card">
+    <label for="mastercardBtn">MasterCard</label>
+    <input type="radio" id="paypalBtn" name="card">
+    <label for="paypalBtn">Paypal</label><br><br>
+
+    <button type="submit" id="mySubmit">submit</button>
+
+    <p id="subresult"></p>
+    <p id="paymentresult"></p>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+-----
+CSS :
+-----
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+}
+
+#mySubmit {
+    font-size: 1em;
+}
