@@ -1,0 +1,124 @@
+JS :
+----
+
+// .map() =    accepts a callback and applies that function
+//             to each element of an array, then return a new array
+
+
+
+// const numbers = [1, 2, 3, 4, 5];
+// const squares = numbers.map(square);
+// const cubes = numbers.map(cube);
+
+// console.log(squares);
+// console.log(cubes);
+
+// function square(element){
+//     return Math.pow(element, 2);
+// }
+
+// function cube(element){
+//     return Math.pow(element, 3);
+// }
+
+
+
+// const students = ["Spongebob", "Patrick", "Sandy", "Squidward"];
+// const studentsupper = students.map(uppercase);
+
+// console.log(studentsupper);
+
+// function uppercase(element){
+//     return element.toUpperCase();
+// }
+
+
+
+const dates = ["2022-01-19", "2022-02-22", "2022-10-09"];
+const formattedDates = dates.map(formatDates);
+
+console.log(formattedDates);
+
+function formatDates(element){
+    const parts = element.split("-");
+    return `${parts[1]}/${parts[2]}/${parts[0]}`;
+}
+
+
+
+------
+HTML :
+------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="H1"></h1>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+-----
+CSS :
+-----
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+h1{
+    color: rgb(244, 113, 101);
+}
+
+form{
+    background-color: rgb(247, 243, 179);
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(244, 201, 115);
+}
+
+#textbox{
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid rgb(46, 2, 205);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+label{
+    font-size : 1.5em;
+    font-weight: bold;   
+}
+
+button{
+    margin-top: 15px;
+    background-color: rgb(251, 74, 83);
+    color: black;
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(248, 26, 37);
+}
+
+#result{
+    font-size: 1.75em;
+    font-weight: bold;
+}
