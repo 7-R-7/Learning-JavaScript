@@ -1,0 +1,125 @@
+JS :
+----
+
+// .filter() = creates a new array by filtering
+//             out elements
+
+
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
+// let Evennums = numbers.filter(isEven);
+// let Oddnums = numbers.filter(isOdd);
+
+// console.log(Evennums);
+// console.log(Oddnums);
+
+// function isEven(num){
+//     return num % 2 === 0;
+// }
+
+// function isOdd(num){
+//     return num % 2 !== 0;
+// }
+
+
+
+
+// const ages = [17, 16, 18, 19, 55, 20];
+// const Adults = ages.filter(isAdult);
+
+// console.log(Adults);
+
+// function isAdult (elem){
+//     return elem >= 18;
+// }
+
+
+
+const words = ["apple", "hello", "elephant", "airplane"];
+const shortWords = words.filter(getShortWords);
+
+console.log(shortWords);
+
+
+function getShortWords(elem){
+    return elem.length <= 6;
+}
+
+
+
+------
+HTML :
+------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="H1"></h1>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+-----
+CSS :
+-----
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+h1{
+    color: rgb(244, 113, 101);
+}
+
+form{
+    background-color: rgb(247, 243, 179);
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(244, 201, 115);
+}
+
+#textbox{
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid rgb(46, 2, 205);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+label{
+    font-size : 1.5em;
+    font-weight: bold;   
+}
+
+button{
+    margin-top: 15px;
+    background-color: rgb(251, 74, 83);
+    color: black;
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(248, 26, 37);
+}
+
+#result{
+    font-size: 1.75em;
+    font-weight: bold;
+}
