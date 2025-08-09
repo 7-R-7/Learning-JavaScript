@@ -8,57 +8,88 @@ DESCRIPTION OF EVERY DAY PROGRESS AND WHAT I LEARNED .
 -----------
 
 
-* PART 1 : console.log() + document.getElementById().textContent + window.alert()
+* PART 01 : console.log() + document.getElementById().textContent + window.alert()
 
-* PART 2 : variables + booleans
+* PART 02 : variables + booleans
 
 
 -----------
 02/ DAY 02:
 -----------
 
-* PART 1 : arithmetic operators
 
-* PART 2 : user input (textbox or window.input)
+* PART 01 : arithmetic operators
 
-* PART 3 : type conversion
+* PART 02 : user input (textbox or window.input)
 
-* PART 4 : constants
+* PART 03 : type conversion
 
-* PART 5 : counter program using javascript + html + css
+* PART 04 : constants
 
-* PART 6 : Math object
+* PART 05 : counter program using javascript + html + css
+
+* PART 06 : Math object
 
 
 -----------
 03/ DAY 03:
 -----------
 
-* PART 1 : Random number generator
 
-* PART 2 : If statements
+* PART 01 : Random number generator
+
+* PART 02 : If statements
 
 
 -----------
 04/ DAY 04:
 -----------
 
-* PART 1 : checked property
 
-* PART 2 : ternary operator
+* PART 01 : checked property
 
-* PART 3 : switches
+* PART 02 : ternary operator
 
-* PART 4 : string methods
+* PART 03 : switches
 
-* PART 5 : string slicing
+* PART 04 : string methods
 
-* PART 6 : method chaining
+* PART 05 : string slicing
 
-* PART 7 : logical operators
+* PART 06 : method chaining
 
-* PART 8 : strict equality
+* PART 07 : logical operators
 
-* PART 9 : while loops
+* PART 08 : strict equality
+
+* PART 09 : while loops
 
 * PART 10 : for loop
+
+
+-----------
+05/ DAY 05:
+-----------
+
+* PART 01 : number guessing game
+
+* PART 02 : functions
+
+* PART 03 : variable scope
+
+* PART 04 : temperature conversion program
+
+* PART 05 : arrays
+
+* PART 06 : 2D arrays
+
+* PART 07 : spread operator
+
+* PART 08 : rest parameters
+
+
+-----------
+06/ DAY 06:
+-----------
+
+* PART 01 : random password generator
