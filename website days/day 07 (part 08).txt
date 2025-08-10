@@ -1,0 +1,124 @@
+JS :
+----
+
+const fruits = [{name: "apple", color: "red", calories: 95}, 
+                {name: "orange", color: "orange", calories: 45},
+                {name: "banana", color: "yellow", calories: 105},
+                {name: "coconut", color: "white", calories: 155},
+                {name: "kiwi", color: "green", calories: 37}];
+
+// console.log(fruits[3].name);
+// console.log(fruits[2].calories);
+
+
+// fruits.push({name: "grapes", color: "purple", calories: 62});
+// fruits.pop();
+// fruits.splice(1, 2);
+// console.log(fruits);
+
+
+// forEach()
+// fruits.forEach(fruit => console.log(fruit.name));
+
+
+// map()
+// const fruitNames = fruits.map(fruit => fruit.name);
+// const fruitColors = fruits.map(fruit => fruit.color);
+// console.log(fruitNames);
+// console.log(fruitColors);
+
+
+// filter()
+// const yellowFruits = fruits.filter(fruit => fruit.color === "yellow");
+// const lowCalFruits = fruits.filter(fruit => fruit.calories < 100 );
+// console.log(yellowFruits);
+// console.log(lowCalFruits);
+
+
+// reduce()
+const maxFruit = fruits.reduce(
+                (max, fruit) => fruit.calories > max.calories ? fruit : max);
+console.log(maxFruit);
+
+const minFruit = fruits.reduce(
+                (min, fruit) => fruit.calories < min.calories ? fruit : min);
+console.log(minFruit);
+
+
+
+------
+HTML :
+------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="H1"></h1>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+-----
+CSS :
+-----
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+h1{
+    color: rgb(244, 113, 101);
+}
+
+form{
+    background-color: rgb(247, 243, 179);
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(244, 201, 115);
+}
+
+#textbox{
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid rgb(46, 2, 205);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+label{
+    font-size : 1.5em;
+    font-weight: bold;   
+}
+
+button{
+    margin-top: 15px;
+    background-color: rgb(251, 74, 83);
+    color: black;
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(248, 26, 37);
+}
+
+#result{
+    font-size: 1.75em;
+    font-weight: bold;
+}
