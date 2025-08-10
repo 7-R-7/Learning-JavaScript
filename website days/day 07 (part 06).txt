@@ -1,0 +1,164 @@
+JS :
+----
+
+// destructuring = extract values fro arrays and objects,
+//                 then assign them to variables in a convenient way
+//                 [] = to perform aaray destructuring
+//                 {} = to perform object destructuring
+                
+
+
+/*-------------EX1--------------*/
+// let a = 1;
+// let b = 2;
+
+// [a, b] = [b, a];
+
+// console.log(a);
+// console.log(b);
+
+
+
+/*-------------EX2--------------*/
+// const colors = ["red", "green", "blue", "white", "black"];
+
+// [colors[0], colors[4]] = [colors[4], colors[0]];
+
+// console.log(colors);
+
+/*-------------EX3--------------*/
+
+// const colors = ["red", "green", "blue", "white", "black"];
+
+// const [firstColor, secondColor, thirdColor, ...extraColor] = colors;
+
+// console.log(firstColor);
+// console.log(secondColor);
+// console.log(thirdColor);
+// console.log(extraColor);
+
+/*-------------EX4--------------*/
+
+// const perosn1 = {
+//     firstName : "Spongebob",
+//     lastName : "Squarepants",
+//     age : 30,
+//     job : "Fry cook"
+// }
+
+// const perosn2 = {
+//     firstName : "Patrick",
+//     lastName : "Star",
+//     age : 30,
+// }
+
+// const {firstName, lastName, age, job="Unemployed"} = perosn2;
+
+// console.log(firstName);
+// console.log(lastName);
+// console.log(age);
+// console.log(job);
+
+
+/*-------------EX5--------------*/
+
+function displayPerson({firstName, lastName, age, job="Umployed"}){
+    console.log(`name ${firstName} ${lastName}`);
+    console.log(`age ${age}`);
+    console.log(`job : ${job}`)
+}
+
+const perosn1 = {
+    firstName : "Spongebob",
+    lastName : "Squarepants",
+    age : 30,
+    job : "Fry cook"
+}
+
+const perosn2 = {
+    firstName : "Patrick",
+    lastName : "Star",
+    age : 30,
+}
+
+displayPerson(perosn1);
+
+
+
+------
+HTML :
+------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="H1"></h1>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+
+-----
+CSS :
+-----
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+h1{
+    color: rgb(244, 113, 101);
+}
+
+form{
+    background-color: rgb(247, 243, 179);
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(244, 201, 115);
+}
+
+#textbox{
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid rgb(46, 2, 205);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+label{
+    font-size : 1.5em;
+    font-weight: bold;   
+}
+
+button{
+    margin-top: 15px;
+    background-color: rgb(251, 74, 83);
+    color: black;
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(248, 26, 37);
+}
+
+#result{
+    font-size: 1.75em;
+    font-weight: bold;
+}
