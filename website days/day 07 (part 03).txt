@@ -1,0 +1,125 @@
+JS :
+----
+
+//inheritance = allows a new class to inherit properties and methods
+//              from an existing class (parent -> child)
+//              help with code reusability
+
+
+class Animal{
+    alive = true;
+
+    eat(){
+        console.log(`This ${this.name} is eating`);
+    }
+    sleep(){
+        console.log(`This ${this.name} is sleeping`);
+    }
+}
+
+class Rabbit extends Animal{
+    name = "rabbit";
+
+    run(){
+        console.log(`This ${this.name} is running`);
+    }
+}
+class Fish extends Animal{
+    name = "fish";
+
+    swim(){
+        console.log(`This ${this.name} is swimming`)
+    }
+}
+class Tiger extends Animal{
+    name = "tiger";
+}
+
+const rabbit = new Rabbit();
+const fish = new Fish();
+const tiger = new Tiger();
+
+console.log(rabbit.alive);
+rabbit.eat();
+rabbit.sleep();
+rabbit.run();
+fish.swim();
+
+
+
+------
+HTML :
+------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="H1"></h1>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+-----
+CSS :
+-----
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+h1{
+    color: rgb(244, 113, 101);
+}
+
+form{
+    background-color: rgb(247, 243, 179);
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(244, 201, 115);
+}
+
+#textbox{
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid rgb(46, 2, 205);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+label{
+    font-size : 1.5em;
+    font-weight: bold;   
+}
+
+button{
+    margin-top: 15px;
+    background-color: rgb(251, 74, 83);
+    color: black;
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(248, 26, 37);
+}
+
+#result{
+    font-size: 1.75em;
+    font-weight: bold;
+}
