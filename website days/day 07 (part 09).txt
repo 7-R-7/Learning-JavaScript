@@ -1,0 +1,106 @@
+JS :
+----
+
+//sort() = method used to sort elements of an array in place.
+//         Sorts elements as strings in lexicographic order, not alphabetical
+//         lexicographic = (alphabet + numbers + symbols ) as strings
+
+
+//let fruits = ["apple", "orange", "banana", "kiwi"];
+//let numbers = [99, 16, 5, 78, 11, 100];
+
+//fruits.sort();
+// numbers.sort(); // lexicographic sort
+// numbers.sort((a, b) => a - b); // numeric sort (for reverse do b - a )
+
+//console.log(fruits);
+//console.log(numbers);
+
+
+const people = [{name: "Spongebob", age:30, gpa: 3.0},
+                {name: "Patrick", age:38, gpa: 1.5},
+                {name: "Squidward", age:53, gpa: 2.5},
+                {name: "Sandy", age: 27, gpa: 4.0}]
+
+people.sort((a, b) => a.gpa - b.gpa);
+
+console.log(people);
+
+
+
+------
+HTML :
+------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="H1"></h1>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+-----
+CSS :
+-----
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+h1{
+    color: rgb(244, 113, 101);
+}
+
+form{
+    background-color: rgb(247, 243, 179);
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(244, 201, 115);
+}
+
+#textbox{
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid rgb(46, 2, 205);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+label{
+    font-size : 1.5em;
+    font-weight: bold;   
+}
+
+button{
+    margin-top: 15px;
+    background-color: rgb(251, 74, 83);
+    color: black;
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(248, 26, 37);
+}
+
+#result{
+    font-size: 1.75em;
+    font-weight: bold;
+}
