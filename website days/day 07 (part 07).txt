@@ -1,0 +1,144 @@
+JS :
+----
+
+//nested objects = Objects inside of other Objects.
+//                 Allows you to represent more complex data structures
+//                 Child Object is enclosed by a Parent Object
+
+//                 Person{Address{}, ContactInfo{}}
+//                 ShoppingCart{Keyboard{}, Mouse{}, Monitor{}}
+
+
+// const person = {
+//     fullName : "Spongebob Sqaurepants",
+//     age: 30,
+//     isStudent: true,
+//     hobbies: ["karate", "jellyfishing", "cooking"],
+//     address: {
+//         street: "124 Conch St.",
+//         city: "Bikini Bottom",
+//         country: "Int. Water"
+//     }
+// }
+
+// console.log(person.fullName);
+// console.log(person.address.street);
+
+// for(const property in person.address){
+//     console.log(person.address[property]);
+// }
+
+
+
+class Person{
+
+    constructor(name, age, ...address){
+        this.name = name;
+        this.age = age;
+        this.address = new Address(...address);
+    }
+}
+
+class Address{
+
+    constructor(street, city, country){
+        this.street = street;
+        this.city = city;
+        this.country = country;
+    }
+}
+
+const person1 = new Person("Spongebob", 30, 
+                           "124 Conch St.", 
+                           "Bikini Bottom",
+                           "Inte. Water");
+const person2 = new Person("Patrick", 38, 
+                           "128 Conch St.", 
+                           "Bikini Bottom",
+                           "Inte. Water");
+const person3 = new Person("Squidward", 30, 
+                           "126 Conch St.", 
+                           "Bikini Bottom",
+                           "Inte. Water");
+
+console.log(person1.address);
+console.log(person1.address.city);
+
+
+
+------
+HTML :
+------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="H1"></h1>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+-----
+CSS :
+-----
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+h1{
+    color: rgb(244, 113, 101);
+}
+
+form{
+    background-color: rgb(247, 243, 179);
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(244, 201, 115);
+}
+
+#textbox{
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid rgb(46, 2, 205);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+label{
+    font-size : 1.5em;
+    font-weight: bold;   
+}
+
+button{
+    margin-top: 15px;
+    background-color: rgb(251, 74, 83);
+    color: black;
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(248, 26, 37);
+}
+
+#result{
+    font-size: 1.75em;
+    font-weight: bold;
+}
