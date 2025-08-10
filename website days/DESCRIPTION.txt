@@ -71,6 +71,7 @@ DESCRIPTION OF EVERY DAY PROGRESS AND WHAT I LEARNED .
 05/ DAY 05:
 -----------
 
+
 * PART 01 : number guessing game
 
 * PART 02 : functions
@@ -92,4 +93,51 @@ DESCRIPTION OF EVERY DAY PROGRESS AND WHAT I LEARNED .
 06/ DAY 06:
 -----------
 
+
 * PART 01 : random password generator
+
+* PART 02 : callbacks
+
+* PART 03 : forEach() method
+
+* PART 04 : map() method
+
+* PART 05 : filter() method
+
+* PART 06 : reduce() method
+
+* PART 07 : function expressions
+
+* PART 08 : arrow functions
+
+* PART 09 : objects
+
+* PART 10 : THIS
+
+* PART 11 : constructors
+
+
+-----------
+07/ DAY 07:
+-----------
+
+
+* PART 01 : classes
+
+* PART 02 : static keyword
+
+* PART 03 : inheritance 
+
+* PART 04 : super keyword
+
+* PART 05 : getters and setters
+
+* PART 06 : destructuring
+
+* PART 07 : nested objects
+
+* PART 08 : arrays of objects
+
+* PART 09 : sort()
+
+* PART 11 : shuffle and array
