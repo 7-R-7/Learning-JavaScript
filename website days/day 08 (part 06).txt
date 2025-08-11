@@ -1,0 +1,136 @@
+JS :
+----
+
+function calculate(){
+
+    const totalAmount = document.getElementById("total-amount");
+    const principalInput = document.getElementById("principal");
+    const rateInput = document.getElementById("rate");
+    const yearsInput = document.getElementById("years");
+
+    let principal = Number(principalInput.value);
+    let rate = Number(rateInput.value / 100);
+    let years = Number(yearsInput.value);
+
+    if(principal < 0 || isNaN(principal)){
+        principal = 0;
+        principalInput.value = 0;
+    }
+    if(rate < 0 || isNaN(rate)){
+        rate = 0 ;
+        rateInput.value = 0;
+    }
+    if(years < 0 || isNaN(years)){
+        years = 0;
+        yearsInput.value = 0;
+    }
+
+    const result = principal * Math.pow((1 + rate / 1), 1 * years);
+
+    totalAmount.textContent = result.toLocaleString(undefined, 
+                                                    {style: "currency", 
+                                                    currency: "USD"});
+}
+
+
+
+
+------
+HTML :
+------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interest Calculator</h1>
+
+    <form>
+        <label for="principal">Principal Amount :</label>
+        <input type="number" id="principal">
+        
+        <label for="rate">Interest Rate :</label>
+        <input type="number" id="rate">
+        
+        <label for="years">Years :</label>
+        <input type="number" id="years">
+
+        <button type="button" onclick="calculate()">submit</button>
+        <p id="total">Total <span id="total-amount">$0.00</span></p>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+
+-----
+CSS :
+-----
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(206, 242, 254);
+}
+
+h1{
+    color:black;
+    font-size: 3em;
+    text-align: center;
+}
+
+form{
+    background-color: rgb(175, 207, 246);
+    max-width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius:10px;
+    box-shadow: 5px 5px 10px rgb(237, 202, 126);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+input{
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid rgb(161, 144, 103);
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+button{
+    background-color: rgb(13, 240, 55);
+    color: rgb(99, 49, 49);
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(37, 197, 37)
+}
+
+#total{
+    font-size: 2em;
+}
+
+#total-amount{
+    color: green;
+    font-weight: bold;
+}
