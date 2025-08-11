@@ -1,0 +1,117 @@
+JS :
+----
+
+//setTimeout =     function in JavaScript that allows you to schedule
+//                 the execution of a function after an amount of time (millieseconds)
+//                 Times are approximate (varies based on the workload of the JavaScript runtime env.)
+
+//                 setTimeout(cancelIdleCallback, delay);
+
+
+
+
+// function sayHello(){
+//     window.alert("Hello");
+// }
+
+// setTimeout(sayHello, 3000);
+
+
+// setTimeout(function(){window.alert("Hello")}, 3000);
+// setTimeout(() => window.alert("Hello"), 3000);
+
+// const timeoutID = setTimeout(() => window.alert("Hello"), 3000);
+
+// clearTimeout(timeoutID); // cancel timeout
+
+
+let timeoutID;
+
+function startTimer(){
+    timeoutID = setTimeout(() => window.alert("Hello"), 3000);
+    console.log("STARTED");
+}
+
+function clearTimer(){
+    clearTimeout(timeoutID);
+    console.log("CLEARED");
+}
+
+
+
+------
+HTML :
+------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="startTimer()">START</button>
+    <button onclick="clearTimer()">CLEAR</button>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+-----
+CSS :
+-----
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+h1{
+    color: rgb(244, 113, 101);
+}
+
+form{
+    background-color: rgb(247, 243, 179);
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(244, 201, 115);
+}
+
+#textbox{
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid rgb(46, 2, 205);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+label{
+    font-size : 1.5em;
+    font-weight: bold;   
+}
+
+button{
+    margin-top: 15px;
+    background-color: rgb(251, 74, 83);
+    color: black;
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(248, 26, 37);
+}
+
+#result{
+    font-size: 1.75em;
+    font-weight: bold;
+}
