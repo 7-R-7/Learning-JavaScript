@@ -141,3 +141,20 @@ DESCRIPTION OF EVERY DAY PROGRESS AND WHAT I LEARNED .
 * PART 09 : sort()
 
 * PART 11 : shuffle and array
+
+
+-----------
+08/ DAY 08:
+-----------
+
+* PART 01 : date objects
+
+* PART 02 : closures
+
+* PART 03 : setTimeout()
+
+* PART 04 : console.time()
+
+* PART 05 : format currency
+
+* PART 06 : compound interest calculator
